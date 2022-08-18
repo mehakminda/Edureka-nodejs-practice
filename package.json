@@ -4,7 +4,7 @@
   "description": "This is a edureka course practice folder",
   "main": "read.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node .\\third-party\\express2.js",
     "lol": "node read.js",
     "folder": "dir",
     "prefolder": "cls",
