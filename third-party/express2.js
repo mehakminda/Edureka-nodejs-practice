@@ -24,17 +24,22 @@ app.get('/players',function(req,res){
      */
     res.write("abc is : "+query.abc);
     res.write("   ab : "+query.ab);
-    res.end("  The entire query parameter i s: "+ JSON.stringify(query)); //this will print results on browser
+    res.end("  The entire query parameter is: "+ JSON.stringify(query)); //this will print results on browser
+    //nothing will be passed after end
 });
+//we have to pass both key and value, but it can be in any order 
 
 app.get('/players2/:name/:lang',function(req,res){
      
     res.write("name is : " + req.params.name);
-    res.write("lang is : " + req.params.lang);
+    res.write(", lang is : " + req.params.lang);
     res.end();
     //http://localhost:40000/players2/mehak/hindi
   
 });
+//we have to pass only value but in specified order.
+
+
 var port= process.env.PORT||40000;
 app.listen(port,function(){
     console.log("Server is listenning on port "+ port);

@@ -33,4 +33,4 @@ console.log("The Program ends");
 //all the async functions are queued. and only when the queue is empty, the program ends.
 //all async function will have a callback and each callback will have 2 arguments, one errorand another data
 
-console.log(process.env.npm_package_config_salutation);
+console.log(">>>> ",process.env.npm_package_config_salutation);
